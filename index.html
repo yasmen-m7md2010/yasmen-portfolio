@@ -23,7 +23,6 @@
 </head>
 <body class="bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 font-sans overflow-x-hidden transition-colors duration-500">
     <div id="toast" class="toast fixed bottom-6 right-6 z-[200] bg-emerald-500 text-white px-6 py-4 rounded-xl shadow-2xl flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5"></i><span id="toast-msg">Message sent!</span></div>
-<!-- اي حاجه -->
     <!-- NAVBAR -->
     <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
         <div class="max-w-6xl mx-auto px-6">
@@ -218,8 +217,16 @@
     overview:'Cleaned and transformed raw Amazon sales data using Excel. Built an interactive dashboard using PivotTables, Pivot Charts, and slicer.',
     objectives:['Clean and transform raw Amazon sales data for analysis.','Visualize monthly sales trends and category performance.','Track order status distribution to monitor fulfillment performance.'],
     tools:['Microsoft Excel','PivotTables','Pivot Charts','Slicers','Data Cleaning'],
-    keyInsights:['Set category leads in total sales among all product categories.','April shows the highest sales peak across the analyzed period.','Order status distribution helps monitor fulfillment efficiency.']}
+    keyInsights:['Set category leads in total sales among all product categories.','April shows the highest sales peak across the analyzed period.','Order status distribution helps monitor fulfillment efficiency.']},
+        {id:'churn',title:'📉 Customer Churn Dashboard',tags:['Power BI','Data Visualization'],
+    thumbnail:'./churn-1.png',
+    images:[{url:'./churn-1.png',title:'Customer Churn Dashboard',description:'<strong>KPIs:</strong> Customers At Risk (1,869), Tech Tickets (2,173)<br><br>• Demographics by Gender (Female 50.24%, Male 49.76%)<br>• Subscription Time Distribution (< 1 Year: 55.48%, 1-2 Years: 24.16%, 2+ Years: 20.37%)<br>• Customer Account Information (Payment Method, Paperless Billing 74.91%, Contract Types)<br>• Subscribed Services (Tech Support 17%, Streaming TV 44%, Streaming Movies 44%)<br>• Internet Service Users (Fiber Optic 69.40%)<br>• Multiple Lines & Phone Service analysis'}],
+    overview:'An interactive Power BI dashboard analyzing customer churn patterns, demographics, account information, and subscribed services to identify at-risk customers and support retention strategies.',
+    objectives:['Analyze churned customer demographics and subscription patterns.','Identify key factors contributing to customer churn.','Provide actionable insights for customer retention strategies.'],
+    tools:['Power BI','Data Visualization','Interactive Filters','DAX'],
+    keyInsights:['1,869 customers are at risk of churning.','Short-tenure customers (< 1 year) have the highest churn rate at 55.48%.','Fiber Optic internet users show significantly higher churn rates.','Customers without Tech Support (17% subscription rate) are more likely to churn.']}
 ];
+
 
 const i18n={
     en:{logo:'Yasmen<span class="text-amber-500">.</span>',nav_about:'About',nav_projects:'Projects',nav_skills:'Skills',nav_education:'Education',nav_certs:'Certifications',nav_lang:'Languages',nav_contact:'Contact',lang_btn:'Arabic',hero_available:'Available for Opportunities',hero_name:'Yasmen Ghonaim',hero_title:'Data Analyst',hero_cta1:'View My Work',hero_cta2:'Download CV',about_label:'About Me',about_p1:'Junior Data Analyst with a Management Information Systems (MIS) background and hands-on knowledge of data visualization, statistical analysis, and database management. Skilled in working with datasets, extracting insights, and presenting findings using Excel, SQL Server, Power BI, Python, and Tableau.',projects_label:'Projects',skills_label:'Skills & Tools',tech_skills:'Technical Skills',soft_skills:'Soft Skills',ss1:'Communication & Teamwork',ss2:'Problem Solving',ss3:'Critical Thinking',ss4:'Analytical Thinking',ss5:'Attention to Detail',ss6:'Adaptability & Time Management',edu_label:'Education',edu_degree:"Bachelor's Degree in Management Information Systems",edu_uni:'Delta Academy for Science and Technology, Mansoura',cert_label:'Certifications',cert_name:'Data Analysis Certification',lang_label:'Languages',lang_native:'Native',lang_good:'Good',contact_label:'Get In Touch',contact_email:'Email',contact_phone:'Phone',form_name:'Your Name',form_email:'Your Email',form_subject:'Subject',form_message:'Message',form_send:'Send Message',view_details:'View Details',modal_overview:'Overview',modal_objectives:'Objectives',modal_tools:'Tools & Techniques',modal_insights:'Key Insights'},
